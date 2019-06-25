@@ -129,10 +129,8 @@ namespace TaskbarMore {
         /* 鼠标悬空事件 */
         private void TaskbarMore_MouseHover(object sender, EventArgs e) {
             this.BackColor = Color.FromArgb(30, 30, 30);
-            if (CapsLockStatus==true)
-                Tip.ToolTipTitle = "Capital";
-            else
-                Tip.ToolTipTitle = "Lower-case";
+            if (CapsLockStatus==true) Tip.ToolTipTitle = "Capital";
+            else Tip.ToolTipTitle = "Lower-case";
         }
         /* 鼠标悬空移动事件 */
         private void TaskbarMore_MouseMove(object sender, MouseEventArgs e) {
