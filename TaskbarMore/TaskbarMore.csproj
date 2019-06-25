@@ -130,13 +130,16 @@
     <None Include="Resources\Boot.png" />
     <None Include="Resources\Exit.png" />
     <None Include="Resources\About.png" />
-    <None Include="Resources\Tip.wav" />
+    <None Include="Resources\Tipvoice.wav" />
     <None Include="Resources\Open.png" />
     <None Include="Resources\Close.png" />
     <None Include="Resources\End.png" />
     <None Include="Resources\Play.png" />
     <None Include="Resources\Pause.png" />
     <None Include="Resources\Timer.png" />
+    <None Include="Resources\Capital.jpg" />
+    <None Include="Resources\Lower-case.jpg" />
+    <None Include="Resources\Tip.wav" />
     <Content Include="TaskbarMore.ico" />
   </ItemGroup>
   <ItemGroup>
