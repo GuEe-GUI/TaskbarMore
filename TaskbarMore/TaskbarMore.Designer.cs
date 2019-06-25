@@ -57,7 +57,7 @@
             this.Boot,
             this.About,
             this.Exit});
-            this.ContextMenuStrip.Name = "contextMenuStrip1";
+            this.ContextMenuStrip.Name = "ContextMenuStrip";
             this.ContextMenuStrip.Size = new System.Drawing.Size(128, 92);
             // 
             // Timer
@@ -69,14 +69,14 @@
             this.End});
             this.Timer.Image = global::TaskbarMore.Properties.Resources.Timer;
             this.Timer.Name = "Timer";
-            this.Timer.Size = new System.Drawing.Size(180, 22);
+            this.Timer.Size = new System.Drawing.Size(127, 22);
             this.Timer.Text = "Timer(&T)";
             // 
             // Reset
             // 
             this.Reset.Image = global::TaskbarMore.Properties.Resources.Reset;
             this.Reset.Name = "Reset";
-            this.Reset.Size = new System.Drawing.Size(180, 22);
+            this.Reset.Size = new System.Drawing.Size(125, 22);
             this.Reset.Text = "Reset(&R)";
             this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
@@ -84,7 +84,7 @@
             // 
             this.On.Image = global::TaskbarMore.Properties.Resources.On;
             this.On.Name = "On";
-            this.On.Size = new System.Drawing.Size(180, 22);
+            this.On.Size = new System.Drawing.Size(125, 22);
             this.On.Text = "On(&O)";
             this.On.Click += new System.EventHandler(this.On_Click);
             // 
@@ -92,7 +92,7 @@
             // 
             this.Pause.Image = global::TaskbarMore.Properties.Resources.Pause;
             this.Pause.Name = "Pause";
-            this.Pause.Size = new System.Drawing.Size(180, 22);
+            this.Pause.Size = new System.Drawing.Size(125, 22);
             this.Pause.Text = "Pause(&P)";
             this.Pause.Click += new System.EventHandler(this.Pause_Click);
             // 
@@ -100,7 +100,7 @@
             // 
             this.End.Image = global::TaskbarMore.Properties.Resources.End;
             this.End.Name = "End";
-            this.End.Size = new System.Drawing.Size(180, 22);
+            this.End.Size = new System.Drawing.Size(125, 22);
             this.End.Text = "End(&E)";
             this.End.Click += new System.EventHandler(this.End_Click);
             // 
@@ -142,7 +142,7 @@
             this.About.ForeColor = System.Drawing.Color.Black;
             this.About.Image = global::TaskbarMore.Properties.Resources.About;
             this.About.Name = "About";
-            this.About.Size = new System.Drawing.Size(180, 22);
+            this.About.Size = new System.Drawing.Size(127, 22);
             this.About.Text = "About(&A)";
             this.About.Click += new System.EventHandler(this.About_Click);
             // 
@@ -152,7 +152,7 @@
             this.Exit.ForeColor = System.Drawing.Color.Black;
             this.Exit.Image = global::TaskbarMore.Properties.Resources.Exit;
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(180, 22);
+            this.Exit.Size = new System.Drawing.Size(127, 22);
             this.Exit.Text = "Exit(&E)";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -189,6 +189,7 @@
             this.Status.Size = new System.Drawing.Size(13, 13);
             this.Status.TabIndex = 2;
             this.Status.TabStop = false;
+            this.Tip.SetToolTip(this.Status, "TaskbarMore");
             // 
             // TaskbarMore
             // 

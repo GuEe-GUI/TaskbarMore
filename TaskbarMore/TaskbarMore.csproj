@@ -130,7 +130,6 @@
     <None Include="Resources\Boot.png" />
     <None Include="Resources\Exit.png" />
     <None Include="Resources\About.png" />
-    <None Include="Resources\Tipvoice.wav" />
     <None Include="Resources\Open.png" />
     <None Include="Resources\Close.png" />
     <None Include="Resources\End.png" />
