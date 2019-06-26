@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskbarMore));
-            this.ContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.Menu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Timer = new System.Windows.Forms.ToolStripMenuItem();
             this.Reset = new System.Windows.Forms.ToolStripMenuItem();
             this.On = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,20 +45,20 @@
             this.TimerMain = new System.Windows.Forms.Timer(this.components);
             this.Tip = new System.Windows.Forms.ToolTip(this.components);
             this.Status = new System.Windows.Forms.PictureBox();
-            this.ContextMenuStrip.SuspendLayout();
+            this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Status)).BeginInit();
             this.SuspendLayout();
             // 
-            // ContextMenuStrip
+            // Menu
             // 
-            this.ContextMenuStrip.BackColor = System.Drawing.Color.White;
-            this.ContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu.BackColor = System.Drawing.Color.White;
+            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Timer,
             this.Boot,
             this.About,
             this.Exit});
-            this.ContextMenuStrip.Name = "ContextMenuStrip";
-            this.ContextMenuStrip.Size = new System.Drawing.Size(128, 92);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(128, 92);
             // 
             // Timer
             // 
@@ -159,7 +159,7 @@
             // Time
             // 
             this.Time.AutoSize = true;
-            this.Time.ContextMenuStrip = this.ContextMenuStrip;
+            this.Time.ContextMenuStrip = this.Menu;
             this.Time.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Time.ForeColor = System.Drawing.Color.White;
             this.Time.Location = new System.Drawing.Point(23, 2);
@@ -182,7 +182,7 @@
             // Status
             // 
             this.Status.BackColor = System.Drawing.Color.White;
-            this.Status.ContextMenuStrip = this.ContextMenuStrip;
+            this.Status.ContextMenuStrip = this.Menu;
             this.Status.Location = new System.Drawing.Point(5, 4);
             this.Status.Margin = new System.Windows.Forms.Padding(0);
             this.Status.Name = "Status";
@@ -196,8 +196,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(120, 22);
-            this.ContextMenuStrip = this.ContextMenuStrip;
+            this.ClientSize = new System.Drawing.Size(120, 23);
+            this.ContextMenuStrip = this.Menu;
             this.ControlBox = false;
             this.Controls.Add(this.Status);
             this.Controls.Add(this.Time);
@@ -217,7 +217,7 @@
             this.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
             this.MouseHover += new System.EventHandler(this.TaskbarMore_MouseHover);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TaskbarMore_MouseMove);
-            this.ContextMenuStrip.ResumeLayout(false);
+            this.Menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Status)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -226,7 +226,7 @@
 
         #endregion
         private System.Windows.Forms.Timer TimerMain;
-        private System.Windows.Forms.ContextMenuStrip ContextMenuStrip;
+        private System.Windows.Forms.ContextMenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem Exit;
         private System.Windows.Forms.ToolStripMenuItem Boot;
         private System.Windows.Forms.ToolStripMenuItem Open;

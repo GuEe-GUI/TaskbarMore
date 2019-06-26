@@ -62,6 +62,7 @@ namespace TaskbarMore {
             Status.Location = new Point(5, (this.Height >> 1) - (Status.Height >> 1));
             Time.Location = new Point(22, (this.Height >> 1) - (Time.Height >> 1));
             this.Location = new Point(TaskBarSize.Width - 520, 0);
+            this.Width = 62;
             /* 将主窗体嵌入任务栏 */
             SetParent(this.Handle, hBar);
         }
