@@ -22,11 +22,7 @@ namespace TaskbarMore.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-<<<<<<< HEAD
     internal class Resources {
-=======
-    public class Resources {
->>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -40,11 +36,7 @@ namespace TaskbarMore.Properties {
         ///   返回此类使用的缓存的 ResourceManager 实例。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-<<<<<<< HEAD
         internal static global::System.Resources.ResourceManager ResourceManager {
-=======
-        public static global::System.Resources.ResourceManager ResourceManager {
->>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TaskbarMore.Properties.Resources", typeof(Resources).Assembly);
@@ -59,11 +51,7 @@ namespace TaskbarMore.Properties {
         ///   重写当前线程的 CurrentUICulture 属性。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-<<<<<<< HEAD
         internal static global::System.Globalization.CultureInfo Culture {
-=======
-        public static global::System.Globalization.CultureInfo Culture {
->>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
             get {
                 return resourceCulture;
             }
@@ -75,31 +63,7 @@ namespace TaskbarMore.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-<<<<<<< HEAD
         internal static System.Drawing.Bitmap Capital {
-=======
-        public static System.Drawing.Bitmap About {
-            get {
-                object obj = ResourceManager.GetObject("About", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        public static System.Drawing.Bitmap Boot {
-            get {
-                object obj = ResourceManager.GetObject("Boot", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        public static System.Drawing.Bitmap Capital {
->>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
             get {
                 object obj = ResourceManager.GetObject("Capital", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -109,14 +73,9 @@ namespace TaskbarMore.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-<<<<<<< HEAD
         internal static System.Drawing.Bitmap Download {
             get {
                 object obj = ResourceManager.GetObject("Download", resourceCulture);
-=======
-        public static System.Drawing.Bitmap Close {
-            get {
-                object obj = ResourceManager.GetObject("Close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -124,32 +83,7 @@ namespace TaskbarMore.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        public static System.Drawing.Bitmap End {
-            get {
-                object obj = ResourceManager.GetObject("End", resourceCulture);
->>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-<<<<<<< HEAD
         internal static System.Drawing.Bitmap Lower_case {
-=======
-        public static System.Drawing.Bitmap Exit {
-            get {
-                object obj = ResourceManager.GetObject("Exit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        public static System.Drawing.Bitmap Lower_case {
->>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
             get {
                 object obj = ResourceManager.GetObject("Lower_case", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -159,79 +93,11 @@ namespace TaskbarMore.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-<<<<<<< HEAD
         internal static System.Drawing.Bitmap Upload {
             get {
                 object obj = ResourceManager.GetObject("Upload", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-=======
-        public static System.Drawing.Bitmap On {
-            get {
-                object obj = ResourceManager.GetObject("On", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        public static System.Drawing.Bitmap Open {
-            get {
-                object obj = ResourceManager.GetObject("Open", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        public static System.Drawing.Bitmap Pause {
-            get {
-                object obj = ResourceManager.GetObject("Pause", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        public static System.Drawing.Bitmap Reset {
-            get {
-                object obj = ResourceManager.GetObject("Reset", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
-        /// </summary>
-        public static System.Drawing.Icon TaskbarMore {
-            get {
-                object obj = ResourceManager.GetObject("TaskbarMore", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        public static System.Drawing.Bitmap Timer {
-            get {
-                object obj = ResourceManager.GetObject("Timer", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似于 System.IO.MemoryStream 的 System.IO.UnmanagedMemoryStream 类型的本地化资源。
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream Tip {
-            get {
-                return ResourceManager.GetStream("Tip", resourceCulture);
-            }
-        }
->>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
     }
 }

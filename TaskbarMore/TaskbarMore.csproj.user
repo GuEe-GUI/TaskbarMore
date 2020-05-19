@@ -1,13 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PublishUrlHistory>publish\</PublishUrlHistory>
-=======
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <PublishUrlHistory>http://www.microsoft.com/myapplication/|发布\</PublishUrlHistory>
->>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
     <InstallUrlHistory />
     <SupportUrlHistory />
     <UpdateUrlHistory />
