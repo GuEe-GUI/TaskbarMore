@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskbarMore", "TaskbarMore\TaskbarMore.csproj", "{669BDFEB-6D89-47B5-8993-1927D4B94957}"
+=======
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskbarMore", "TaskbarMore\TaskbarMore.csproj", "{3E2B1248-5189-4CBD-9767-B1BABD3AC326}"
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+<<<<<<< HEAD
 		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
@@ -21,11 +27,23 @@ Global
 		{669BDFEB-6D89-47B5-8993-1927D4B94957}.Release|Any CPU.Build.0 = Release|Any CPU
 		{669BDFEB-6D89-47B5-8993-1927D4B94957}.Release|x64.ActiveCfg = Release|x64
 		{669BDFEB-6D89-47B5-8993-1927D4B94957}.Release|x64.Build.0 = Release|x64
+=======
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E2B1248-5189-4CBD-9767-B1BABD3AC326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2B1248-5189-4CBD-9767-B1BABD3AC326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2B1248-5189-4CBD-9767-B1BABD3AC326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2B1248-5189-4CBD-9767-B1BABD3AC326}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B614C1E7-C06E-4423-BD4F-1ABE0BCB3CB8}
 	EndGlobalSection
+=======
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
 EndGlobal

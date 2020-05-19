@@ -1,9 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+=======
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{669BDFEB-6D89-47B5-8993-1927D4B94957}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TaskbarMore</RootNamespace>
@@ -13,6 +18,17 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <PublishUrl>publish\</PublishUrl>
+=======
+    <ProjectGuid>{3E2B1248-5189-4CBD-9767-B1BABD3AC326}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TaskbarMore</RootNamespace>
+    <AssemblyName>TaskbarMore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ASUS\Desktop\test\</PublishUrl>
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,10 +38,18 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+<<<<<<< HEAD
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+=======
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -46,6 +70,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+<<<<<<< HEAD
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -71,25 +96,63 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>TaskbarMore.ico</ApplicationIcon>
+=======
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>TaskbarMore.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1F98735DD6F65636B0D8AB87728B176D22502F3F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TaskbarMore_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+<<<<<<< HEAD
     <Reference Include="System.Management" />
+=======
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+<<<<<<< HEAD
     <Reference Include="System.Net.Http" />
+=======
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KeyboardHook.cs" />
+<<<<<<< HEAD
     <Compile Include="NetworkAdapter.cs" />
     <Compile Include="NetWorkSpeedMonitor.cs" />
+=======
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
     <Compile Include="TaskbarMore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,8 +161,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+=======
+    <EmbeddedResource Include="TaskbarMore.resx">
+      <DependentUpon>TaskbarMore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -108,9 +179,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="TaskbarMore.resx">
       <DependentUpon>TaskbarMore.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <None Include="Properties\app.manifest" />
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,11 +195,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+<<<<<<< HEAD
+=======
+    <None Include="TaskbarMore_TemporaryKey.pfx" />
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\Capital.png" />
     <None Include="Resources\Download.png" />
     <None Include="Resources\Lower-case.png" />
@@ -137,6 +217,34 @@
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+=======
+    <None Include="Resources\Reset.png" />
+    <None Include="Resources\Boot.png" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\About.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\End.png" />
+    <None Include="Resources\Play.png" />
+    <None Include="Resources\Pause.png" />
+    <None Include="Resources\Timer.png" />
+    <None Include="Resources\Capital.jpg" />
+    <None Include="Resources\Lower-case.jpg" />
+    <None Include="Resources\Tip.wav" />
+    <Content Include="TaskbarMore.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>
@@ -144,4 +252,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+<<<<<<< HEAD
+=======
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
 </Project>

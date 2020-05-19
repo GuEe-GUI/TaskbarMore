@@ -14,10 +14,15 @@ using System.Windows.Forms;
 //}
 //停止
 //k_hook.Stop();
+<<<<<<< HEAD
 namespace KeyboardHookNS
 {
     public class KeyboardHook
     {
+=======
+namespace TaskbarMore{
+    class KeyboardHook{
+>>>>>>> 25b12ccfb54d31de3f1f3b0774ac87a84c562c9c
         public event KeyEventHandler KeyDownEvent;
         public event KeyPressEventHandler KeyPressEvent;
         public event KeyEventHandler KeyUpEvent;
