@@ -132,19 +132,19 @@ namespace TaskbarMore
             double DownloadSpeedKbps = Adapters[0].DownloadSpeedKbps;
             if (UploadSpeedKbps < 100)
             {
-                this.Upload_Text.Text = string.Format("{0:0.00} K/s", Adapters[0].DownloadSpeedKbps);
+                this.Upload_Text.Text = string.Format("{0:0.00} K/s", UploadSpeedKbps);
             }
             else
             {
-                this.Upload_Text.Text = string.Format("{0:0.0} M/s", Adapters[0].DownloadSpeedKbps / 1024);
+                this.Upload_Text.Text = string.Format("{0:0.0} M/s", UploadSpeedKbps / 1024);
             }
             if (DownloadSpeedKbps < 100)
             {
-                this.Download_Text.Text = string.Format("{0:0.00} K/s", Adapters[0].UploadSpeedKbps);
+                this.Download_Text.Text = string.Format("{0:0.00} K/s", DownloadSpeedKbps);
             }
             else
             {
-                this.Download_Text.Text = string.Format("{0:0.0} M/s", Adapters[0].UploadSpeedKbps / 1024);
+                this.Download_Text.Text = string.Format("{0:0.0} M/s", DownloadSpeedKbps / 1024);
             }
             this.CPU_Text.Text = string.Format("{0}%", (int)CPU_Counter.NextValue());
             this.RAM_Text.Text = string.Format("{0}%", (int)((1 - RAM_Counter.NextValue() / RAM_ALL) * 100));
