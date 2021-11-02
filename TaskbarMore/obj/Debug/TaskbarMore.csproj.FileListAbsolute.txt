@@ -1,9 +1,0 @@
-F:\Project\C#\TaskbarMore\TaskbarMore\bin\Debug\TaskbarMore.exe.config
-F:\Project\C#\TaskbarMore\TaskbarMore\bin\Debug\TaskbarMore.exe
-F:\Project\C#\TaskbarMore\TaskbarMore\bin\Debug\TaskbarMore.pdb
-F:\Project\C#\TaskbarMore\TaskbarMore\obj\Debug\TaskbarMore.csprojAssemblyReference.cache
-F:\Project\C#\TaskbarMore\TaskbarMore\obj\Debug\TaskbarMore.Properties.Resources.resources
-F:\Project\C#\TaskbarMore\TaskbarMore\obj\Debug\TaskbarMore.TaskbarMore.resources
-F:\Project\C#\TaskbarMore\TaskbarMore\obj\Debug\TaskbarMore.csproj.GenerateResource.cache
-F:\Project\C#\TaskbarMore\TaskbarMore\obj\Debug\TaskbarMore.exe
-F:\Project\C#\TaskbarMore\TaskbarMore\obj\Debug\TaskbarMore.pdb

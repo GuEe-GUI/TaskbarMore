@@ -57,9 +57,10 @@
             this.Upload_Text.ContextMenuStrip = this.contextMenu;
             this.Upload_Text.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Upload_Text.ForeColor = System.Drawing.Color.White;
-            this.Upload_Text.Location = new System.Drawing.Point(13, 2);
+            this.Upload_Text.Location = new System.Drawing.Point(17, 2);
+            this.Upload_Text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Upload_Text.Name = "Upload_Text";
-            this.Upload_Text.Size = new System.Drawing.Size(49, 16);
+            this.Upload_Text.Size = new System.Drawing.Size(61, 20);
             this.Upload_Text.TabIndex = 2;
             this.Upload_Text.Text = "0.00 K/s";
             this.Upload_Text.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
@@ -68,6 +69,7 @@
             // 
             // contextMenu
             // 
+            this.contextMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startupMenuItem,
             this.unStartupMenuItem,
@@ -75,35 +77,35 @@
             this.exitMenuItem});
             this.contextMenu.Name = "contextMenu";
             this.contextMenu.ShowImageMargin = false;
-            this.contextMenu.Size = new System.Drawing.Size(127, 92);
+            this.contextMenu.Size = new System.Drawing.Size(149, 100);
             // 
             // startupMenuItem
             // 
             this.startupMenuItem.Name = "startupMenuItem";
-            this.startupMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.startupMenuItem.Size = new System.Drawing.Size(148, 24);
             this.startupMenuItem.Text = "Startup(&S)";
-            this.startupMenuItem.Click += new System.EventHandler(this.startupMenuItem_Click);
+            this.startupMenuItem.Click += new System.EventHandler(this.StartupMenuItem_Click);
             // 
             // unStartupMenuItem
             // 
             this.unStartupMenuItem.Name = "unStartupMenuItem";
-            this.unStartupMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.unStartupMenuItem.Size = new System.Drawing.Size(148, 24);
             this.unStartupMenuItem.Text = "UnStartup(&U)";
-            this.unStartupMenuItem.Click += new System.EventHandler(this.unStartupMenuItem_Click);
+            this.unStartupMenuItem.Click += new System.EventHandler(this.UnStartupMenuItem_Click);
             // 
             // aboutMenuItem
             // 
             this.aboutMenuItem.Name = "aboutMenuItem";
-            this.aboutMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aboutMenuItem.Size = new System.Drawing.Size(148, 24);
             this.aboutMenuItem.Text = "About(&a)";
-            this.aboutMenuItem.Click += new System.EventHandler(this.aboutMenuItem_Click);
+            this.aboutMenuItem.Click += new System.EventHandler(this.AboutMenuItem_Click);
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.exitMenuItem.Size = new System.Drawing.Size(148, 24);
             this.exitMenuItem.Text = "Exit(&E)";
-            this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
+            this.exitMenuItem.Click += new System.EventHandler(this.ExitMenuItem_Click);
             // 
             // Download_Text
             // 
@@ -112,9 +114,10 @@
             this.Download_Text.ContextMenuStrip = this.contextMenu;
             this.Download_Text.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Download_Text.ForeColor = System.Drawing.Color.White;
-            this.Download_Text.Location = new System.Drawing.Point(13, 21);
+            this.Download_Text.Location = new System.Drawing.Point(17, 26);
+            this.Download_Text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Download_Text.Name = "Download_Text";
-            this.Download_Text.Size = new System.Drawing.Size(49, 16);
+            this.Download_Text.Size = new System.Drawing.Size(61, 20);
             this.Download_Text.TabIndex = 3;
             this.Download_Text.Text = "0.00 K/s";
             this.Download_Text.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
@@ -128,9 +131,10 @@
             this.CPU_Title.ContextMenuStrip = this.contextMenu;
             this.CPU_Title.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.CPU_Title.ForeColor = System.Drawing.Color.White;
-            this.CPU_Title.Location = new System.Drawing.Point(69, 2);
+            this.CPU_Title.Location = new System.Drawing.Point(92, 2);
+            this.CPU_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CPU_Title.Name = "CPU_Title";
-            this.CPU_Title.Size = new System.Drawing.Size(30, 16);
+            this.CPU_Title.Size = new System.Drawing.Size(37, 20);
             this.CPU_Title.TabIndex = 4;
             this.CPU_Title.Text = "CPU";
             this.CPU_Title.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
@@ -144,9 +148,10 @@
             this.RAM_Title.ContextMenuStrip = this.contextMenu;
             this.RAM_Title.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.RAM_Title.ForeColor = System.Drawing.Color.White;
-            this.RAM_Title.Location = new System.Drawing.Point(69, 21);
+            this.RAM_Title.Location = new System.Drawing.Point(92, 26);
+            this.RAM_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RAM_Title.Name = "RAM_Title";
-            this.RAM_Title.Size = new System.Drawing.Size(34, 16);
+            this.RAM_Title.Size = new System.Drawing.Size(42, 20);
             this.RAM_Title.TabIndex = 5;
             this.RAM_Title.Text = "RAM";
             this.RAM_Title.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
@@ -160,9 +165,10 @@
             this.RAM_Text.ContextMenuStrip = this.contextMenu;
             this.RAM_Text.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.RAM_Text.ForeColor = System.Drawing.Color.White;
-            this.RAM_Text.Location = new System.Drawing.Point(98, 21);
+            this.RAM_Text.Location = new System.Drawing.Point(131, 26);
+            this.RAM_Text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RAM_Text.Name = "RAM_Text";
-            this.RAM_Text.Size = new System.Drawing.Size(30, 16);
+            this.RAM_Text.Size = new System.Drawing.Size(37, 20);
             this.RAM_Text.TabIndex = 7;
             this.RAM_Text.Text = "00%";
             this.RAM_Text.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
@@ -176,9 +182,10 @@
             this.CPU_Text.ContextMenuStrip = this.contextMenu;
             this.CPU_Text.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.CPU_Text.ForeColor = System.Drawing.Color.White;
-            this.CPU_Text.Location = new System.Drawing.Point(98, 2);
+            this.CPU_Text.Location = new System.Drawing.Point(131, 2);
+            this.CPU_Text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CPU_Text.Name = "CPU_Text";
-            this.CPU_Text.Size = new System.Drawing.Size(30, 16);
+            this.CPU_Text.Size = new System.Drawing.Size(37, 20);
             this.CPU_Text.TabIndex = 6;
             this.CPU_Text.Text = "00%";
             this.CPU_Text.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
@@ -189,9 +196,10 @@
             // 
             this.Download_Img.ContextMenuStrip = this.contextMenu;
             this.Download_Img.Image = global::TaskbarMore.Properties.Resources.Download;
-            this.Download_Img.Location = new System.Drawing.Point(5, 25);
+            this.Download_Img.Location = new System.Drawing.Point(7, 31);
+            this.Download_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Download_Img.Name = "Download_Img";
-            this.Download_Img.Size = new System.Drawing.Size(7, 8);
+            this.Download_Img.Size = new System.Drawing.Size(9, 10);
             this.Download_Img.TabIndex = 1;
             this.Download_Img.TabStop = false;
             this.Download_Img.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
@@ -202,9 +210,10 @@
             // 
             this.Upload_Img.ContextMenuStrip = this.contextMenu;
             this.Upload_Img.Image = global::TaskbarMore.Properties.Resources.Upload;
-            this.Upload_Img.Location = new System.Drawing.Point(5, 6);
+            this.Upload_Img.Location = new System.Drawing.Point(7, 8);
+            this.Upload_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Upload_Img.Name = "Upload_Img";
-            this.Upload_Img.Size = new System.Drawing.Size(7, 8);
+            this.Upload_Img.Size = new System.Drawing.Size(9, 10);
             this.Upload_Img.TabIndex = 0;
             this.Upload_Img.TabStop = false;
             this.Upload_Img.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
@@ -216,9 +225,10 @@
             this.Key.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Key.ContextMenuStrip = this.contextMenu;
             this.Key.Image = global::TaskbarMore.Properties.Resources.Lower_case;
-            this.Key.Location = new System.Drawing.Point(130, 11);
+            this.Key.Location = new System.Drawing.Point(173, 14);
+            this.Key.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Key.Name = "Key";
-            this.Key.Size = new System.Drawing.Size(16, 18);
+            this.Key.Size = new System.Drawing.Size(21, 22);
             this.Key.TabIndex = 8;
             this.Key.TabStop = false;
             this.Key.MouseLeave += new System.EventHandler(this.TaskbarMore_MouseLeave);
@@ -227,10 +237,10 @@
             // 
             // TaskbarMore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(150, 39);
+            this.ClientSize = new System.Drawing.Size(200, 49);
             this.ContextMenuStrip = this.contextMenu;
             this.Controls.Add(this.Key);
             this.Controls.Add(this.RAM_Text);
@@ -243,6 +253,7 @@
             this.Controls.Add(this.Upload_Img);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TaskbarMore";

@@ -26,16 +26,17 @@ namespace TaskbarMore
         [DllImport("user32.dll", EntryPoint = "GetKeyboardState")]
         public static extern int GetKeyboardState(byte[] pbKeyState);
 
-        private KeyboardHook KeyHook;
-        private NetworkAdapter[] Adapters;
-        private NetworkMonitor Monitor;
-        private PerformanceCounter CPU_Counter;
-        private PerformanceCounter RAM_Counter;
-        private Timer TaskbarMoreTimer;
-        private long RAM_ALL;
+        private readonly KeyboardHook KeyHook;
+        private readonly NetworkAdapter[] Adapters;
+        private readonly NetworkMonitor Monitor;
+        private readonly PerformanceCounter CPU_Counter;
+        private readonly PerformanceCounter RAM_Counter;
+        private readonly Timer TaskbarMoreTimer;
+        private readonly long RAM_ALL;
 
-        private IntPtr MSTaskSwWClass;
-        private IntPtr MSTaskListWClass;
+        private readonly IntPtr MSTaskSwWClass;
+        private readonly IntPtr MSTaskListWClass;
+        private readonly IntPtr ReBarWindow32;
         private Rectangle MSTaskSwWClassRect;
         private Rectangle MSTaskListWClassRect;
         private int MSTaskSwWClassRectBeforeRight;
@@ -45,7 +46,7 @@ namespace TaskbarMore
             InitializeComponent();
 
             IntPtr Shell_TrayWnd = FindWindowEx(IntPtr.Zero, IntPtr.Zero, "Shell_TrayWnd", null);
-            IntPtr ReBarWindow32 = FindWindowEx(Shell_TrayWnd, IntPtr.Zero, "ReBarWindow32", null);
+            ReBarWindow32 = FindWindowEx(Shell_TrayWnd, IntPtr.Zero, "ReBarWindow32", null);
             MSTaskSwWClass = FindWindowEx(ReBarWindow32, IntPtr.Zero, "MSTaskSwWClass", null);
             MSTaskListWClass = FindWindowEx(MSTaskSwWClass, IntPtr.Zero, "MSTaskListWClass", null);
 
@@ -100,7 +101,7 @@ namespace TaskbarMore
             MoveWindow(MSTaskListWClass, 0, 0, MSTaskSwWClassRect.Right - MSTaskListWClassRect.Left - MSTaskListWClassRect.X - this.Width, MSTaskListWClassRect.Bottom - MSTaskListWClassRect.Top - MSTaskListWClassRect.Y, true);
             this.Left = MSTaskSwWClassRect.Width - this.Width - MSTaskSwWClassRect.Left;
             this.Top = 1;
-            SetParent(this.Handle, MSTaskSwWClass);
+            SetParent(this.Handle, ReBarWindow32);
         }
 
         private void TaskbarMore_FormClosing(object sender, FormClosingEventArgs e)
@@ -180,7 +181,7 @@ namespace TaskbarMore
             }
         }
 
-        private void startupMenuItem_Click(object sender, EventArgs e)
+        private void StartupMenuItem_Click(object sender, EventArgs e)
         {
             string KeyName = "TaskbarMore";
             try
@@ -201,7 +202,7 @@ namespace TaskbarMore
             }
         }
 
-        private void unStartupMenuItem_Click(object sender, EventArgs e)
+        private void UnStartupMenuItem_Click(object sender, EventArgs e)
         {
             string KeyName = "TaskbarMore";
             try
@@ -221,12 +222,12 @@ namespace TaskbarMore
             }
         }
 
-        private void aboutMenuItem_Click(object sender, EventArgs e)
+        private void AboutMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("It is powered by GUI.\n\rIt can display network, CPU, RAM, caps lock status.", "TaskbarMore About", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void exitMenuItem_Click(object sender, EventArgs e)
+        private void ExitMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
             this.Dispose();
