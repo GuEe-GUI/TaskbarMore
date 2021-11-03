@@ -19,6 +19,8 @@ namespace TaskbarMore
         static extern IntPtr FindWindowEx(IntPtr hWnd1, IntPtr hWnd2, String lpsz1, String lpsz2);
         [DllImport("user32.dll", EntryPoint = "SetParent")]
         static extern IntPtr SetParent(IntPtr hWnd, IntPtr hWndNewParent);
+        [DllImport("user32.dll", EntryPoint = "GetParent")]
+        static extern IntPtr GetParent(IntPtr hWnd);
         [DllImport("user32.dll")]
         static extern bool MoveWindow(IntPtr hWnd, int x, int y, int nWidth, int nHeight, bool BRePaint);
         [DllImport("user32.dll")]
@@ -88,7 +90,6 @@ namespace TaskbarMore
             TaskbarMoreTimer.Tick += TaskbarMore_ShowInfo;
             TaskbarMoreTimer.Interval = 1000;
             TaskbarMoreTimer.Enabled = true;
-            //40 || 30
         }
 
         private void TaskbarMore_Load(object sender, EventArgs e)
@@ -119,15 +120,17 @@ namespace TaskbarMore
 
         private void TaskbarMore_ShowInfo(object sender, EventArgs e)
         {
+            Console.WriteLine(ReBarWindow32 + "," + GetParent(this.Handle));
             GetWindowRect(MSTaskSwWClass, out MSTaskSwWClassRect);
             if (MSTaskSwWClassRectBeforeRight != MSTaskSwWClassRect.Right)
             {
                 GetWindowRect(MSTaskListWClass, out MSTaskListWClassRect);
                 MSTaskSwWClassRectBeforeRight = MSTaskSwWClassRect.Right;
-                MoveWindow(MSTaskListWClass, 0, 0, MSTaskSwWClassRect.Right - MSTaskListWClassRect.Left - MSTaskListWClassRect.X - this.Width, MSTaskListWClassRect.Bottom - MSTaskListWClassRect.Top - MSTaskListWClassRect.Y, true);
+                
                 MoveWindow(this.Handle, MSTaskSwWClassRect.Width - this.Width - MSTaskSwWClassRect.Left, 1, this.Width, this.Height, true);
                 SetParent(this.Handle, MSTaskSwWClass);
             }
+            MoveWindow(MSTaskListWClass, 0, 0, MSTaskSwWClassRect.Right - MSTaskListWClassRect.Left - MSTaskListWClassRect.X - this.Width, MSTaskListWClassRect.Bottom - MSTaskListWClassRect.Top - MSTaskListWClassRect.Y, true);
 
             double UploadSpeedKbps = Adapters[0].UploadSpeedKbps;
             double DownloadSpeedKbps = Adapters[0].DownloadSpeedKbps;
