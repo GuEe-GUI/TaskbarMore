@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -76,7 +76,7 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -97,6 +97,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ThemeLabel.cs" />
     <Compile Include="KeyboardHook.cs" />
     <Compile Include="NetworkAdapter.cs" />
     <Compile Include="NetWorkSpeedMonitor.cs" />
@@ -136,9 +137,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Capital.png" />
+    <None Include="Resources\Capital_dark.png" />
+    <None Include="Resources\Capital_light.png" />
     <None Include="Resources\Download.png" />
-    <None Include="Resources\Lower-case.png" />
+    <None Include="Resources\Lower-case_dark.png" />
+    <None Include="Resources\Lower-case_light.png" />
     <None Include="Resources\Upload.png" />
     <Content Include="TaskbarMore.ico" />
   </ItemGroup>
