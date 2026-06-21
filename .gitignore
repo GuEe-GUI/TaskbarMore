@@ -1,0 +1,4 @@
+.vs
+TaskbarMore/bin
+!TaskbarMore/bin/x64/Release/TaskbarMore.exe
+TaskbarMore/obj

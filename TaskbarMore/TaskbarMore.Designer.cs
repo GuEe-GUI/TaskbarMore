@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskbarMore));
-            this.Upload_Text = new System.Windows.Forms.Label();
+            this.Upload_Text = new ThemeLabel();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.startupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unStartupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Download_Text = new System.Windows.Forms.Label();
-            this.CPU_Title = new System.Windows.Forms.Label();
-            this.RAM_Title = new System.Windows.Forms.Label();
-            this.RAM_Text = new System.Windows.Forms.Label();
-            this.CPU_Text = new System.Windows.Forms.Label();
+            this.Download_Text = new ThemeLabel();
+            this.CPU_Title = new ThemeLabel();
+            this.RAM_Title = new ThemeLabel();
+            this.RAM_Text = new ThemeLabel();
+            this.CPU_Text = new ThemeLabel();
             this.Download_Img = new System.Windows.Forms.PictureBox();
             this.Upload_Img = new System.Windows.Forms.PictureBox();
             this.Key = new System.Windows.Forms.PictureBox();
@@ -77,33 +77,33 @@
             this.exitMenuItem});
             this.contextMenu.Name = "contextMenu";
             this.contextMenu.ShowImageMargin = false;
-            this.contextMenu.Size = new System.Drawing.Size(149, 100);
+            this.contextMenu.Size = new System.Drawing.Size(186, 128);
             // 
             // startupMenuItem
             // 
             this.startupMenuItem.Name = "startupMenuItem";
-            this.startupMenuItem.Size = new System.Drawing.Size(148, 24);
+            this.startupMenuItem.Size = new System.Drawing.Size(185, 24);
             this.startupMenuItem.Text = "Startup(&S)";
             this.startupMenuItem.Click += new System.EventHandler(this.StartupMenuItem_Click);
             // 
             // unStartupMenuItem
             // 
             this.unStartupMenuItem.Name = "unStartupMenuItem";
-            this.unStartupMenuItem.Size = new System.Drawing.Size(148, 24);
+            this.unStartupMenuItem.Size = new System.Drawing.Size(185, 24);
             this.unStartupMenuItem.Text = "UnStartup(&U)";
             this.unStartupMenuItem.Click += new System.EventHandler(this.UnStartupMenuItem_Click);
             // 
             // aboutMenuItem
             // 
             this.aboutMenuItem.Name = "aboutMenuItem";
-            this.aboutMenuItem.Size = new System.Drawing.Size(148, 24);
-            this.aboutMenuItem.Text = "About(&a)";
+            this.aboutMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.aboutMenuItem.Text = "About(&A)";
             this.aboutMenuItem.Click += new System.EventHandler(this.AboutMenuItem_Click);
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(148, 24);
+            this.exitMenuItem.Size = new System.Drawing.Size(185, 24);
             this.exitMenuItem.Text = "Exit(&E)";
             this.exitMenuItem.Click += new System.EventHandler(this.ExitMenuItem_Click);
             // 
@@ -197,7 +197,7 @@
             this.Download_Img.ContextMenuStrip = this.contextMenu;
             this.Download_Img.Image = global::TaskbarMore.Properties.Resources.Download;
             this.Download_Img.Location = new System.Drawing.Point(7, 31);
-            this.Download_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Download_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Download_Img.Name = "Download_Img";
             this.Download_Img.Size = new System.Drawing.Size(9, 10);
             this.Download_Img.TabIndex = 1;
@@ -211,7 +211,7 @@
             this.Upload_Img.ContextMenuStrip = this.contextMenu;
             this.Upload_Img.Image = global::TaskbarMore.Properties.Resources.Upload;
             this.Upload_Img.Location = new System.Drawing.Point(7, 8);
-            this.Upload_Img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Upload_Img.Margin = new System.Windows.Forms.Padding(4);
             this.Upload_Img.Name = "Upload_Img";
             this.Upload_Img.Size = new System.Drawing.Size(9, 10);
             this.Upload_Img.TabIndex = 0;
@@ -224,9 +224,9 @@
             // 
             this.Key.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Key.ContextMenuStrip = this.contextMenu;
-            this.Key.Image = global::TaskbarMore.Properties.Resources.Lower_case;
+            this.Key.Image = global::TaskbarMore.Properties.Resources.Lower_case_dark;
             this.Key.Location = new System.Drawing.Point(173, 14);
-            this.Key.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Key.Margin = new System.Windows.Forms.Padding(4);
             this.Key.Name = "Key";
             this.Key.Size = new System.Drawing.Size(21, 22);
             this.Key.TabIndex = 8;
@@ -237,8 +237,7 @@
             // 
             // TaskbarMore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(200, 49);
             this.ContextMenuStrip = this.contextMenu;
@@ -253,12 +252,13 @@
             this.Controls.Add(this.Upload_Img);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TaskbarMore";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Location = new System.Drawing.Point(-32000, -32000);
             this.Text = "TaskbarMore";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TaskbarMore_FormClosing);
             this.Load += new System.EventHandler(this.TaskbarMore_Load);
@@ -279,12 +279,12 @@
 
         private System.Windows.Forms.PictureBox Upload_Img;
         private System.Windows.Forms.PictureBox Download_Img;
-        private System.Windows.Forms.Label Upload_Text;
-        private System.Windows.Forms.Label Download_Text;
-        private System.Windows.Forms.Label CPU_Title;
-        private System.Windows.Forms.Label RAM_Title;
-        private System.Windows.Forms.Label RAM_Text;
-        private System.Windows.Forms.Label CPU_Text;
+        private ThemeLabel Upload_Text;
+        private ThemeLabel Download_Text;
+        private ThemeLabel CPU_Title;
+        private ThemeLabel RAM_Title;
+        private ThemeLabel RAM_Text;
+        private ThemeLabel CPU_Text;
         private System.Windows.Forms.PictureBox Key;
         private System.Windows.Forms.ContextMenuStrip contextMenu;
         private System.Windows.Forms.ToolStripMenuItem exitMenuItem;

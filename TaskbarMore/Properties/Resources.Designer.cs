@@ -63,9 +63,16 @@ namespace TaskbarMore.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap Capital {
+        internal static System.Drawing.Bitmap Capital_dark {
             get {
-                object obj = ResourceManager.GetObject("Capital", resourceCulture);
+                object obj = ResourceManager.GetObject("Capital_dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Capital_light {
+            get {
+                object obj = ResourceManager.GetObject("Capital_light", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +90,16 @@ namespace TaskbarMore.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap Lower_case {
+        internal static System.Drawing.Bitmap Lower_case_dark {
             get {
-                object obj = ResourceManager.GetObject("Lower_case", resourceCulture);
+                object obj = ResourceManager.GetObject("Lower_case_dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Lower_case_light {
+            get {
+                object obj = ResourceManager.GetObject("Lower_case_light", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
