@@ -1,4 +1,5 @@
-.vs
-TaskbarMore/bin
-!TaskbarMore/bin/x64/Release/TaskbarMore.exe
-TaskbarMore/obj
+﻿**/bin/
+**/obj/
+.vs/
+.build-deps/
+artifacts/
